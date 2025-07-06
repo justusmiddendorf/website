@@ -3,33 +3,47 @@
     <div class="footer-container">
       <div class="footer-content">
         <div class="footer-section">
-          <h3 class="footer-title">MyApp</h3>
+          <h3 class="footer-title">
+            <span class="code-bracket">&lt;</span>
+            justus
+            <span class="code-bracket">/&gt;</span>
+          </h3>
           <p class="footer-description">
-            Eine moderne Webanwendung für alle Ihre Bedürfnisse.
+            Informatik-Student mit Leidenschaft für Clean Code und innovative Lösungen.
           </p>
+          <div class="social-links">
+            <a href="#" class="social-link">💼 LinkedIn</a>
+            <a href="#" class="social-link">🐙 GitHub</a>
+            <a href="#" class="social-link">📧 Email</a>
+          </div>
         </div>
         
         <div class="footer-section">
-          <h4 class="footer-subtitle">Links</h4>
+          <h4 class="footer-subtitle">Navigation</h4>
           <ul class="footer-links">
-            <li><router-link to="/" class="footer-link">Home</router-link></li>
-            <li><router-link to="/about" class="footer-link">Über uns</router-link></li>
-            <li><router-link to="/services" class="footer-link">Services</router-link></li>
-            <li><router-link to="/contact" class="footer-link">Kontakt</router-link></li>
+            <li><router-link to="/" class="footer-link">🏠 Home</router-link></li>
+            <li><router-link to="/about" class="footer-link">👨‍💻 About</router-link></li>
+            <li><router-link to="/projects" class="footer-link">🚀 Projekte</router-link></li>
+            <li><router-link to="/skills" class="footer-link">⚡ Skills</router-link></li>
+            <li><router-link to="/contact" class="footer-link">📧 Kontakt</router-link></li>
           </ul>
         </div>
 
         <div class="footer-section">
-          <h4 class="footer-subtitle">Kontakt</h4>
-          <div class="contact-info">
-            <p>📧 info@myapp.de</p>
-            <p>📞 +49 123 456 789</p>
+          <h4 class="footer-subtitle">Tech Stack</h4>
+          <div class="tech-stack">
+            <span class="tech-item">Vue.js</span>
+            <span class="tech-item">TypeScript</span>
+            <span class="tech-item">Node.js</span>
+            <span class="tech-item">Python</span>
+            <span class="tech-item">PostgreSQL</span>
+            <span class="tech-item">Docker</span>
           </div>
         </div>
       </div>
       
       <div class="footer-bottom">
-        <p>&copy; {{ currentYear }} MyApp. Alle Rechte vorbehalten.</p>
+        <p>&copy; {{ currentYear }} Justus - Informatik-Student • Made with ❤️ and lots of ☕</p>
       </div>
     </div>
   </footer>
@@ -66,12 +80,18 @@ const currentYear = computed(() => new Date().getFullYear())
   margin-bottom: 1rem;
 }
 
+.code-bracket {
+  color: #5af78e;
+  font-weight: 900;
+}
+
 .footer-title {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   font-size: 1.5rem;
+  font-family: 'Fira Code', monospace;
 }
 
 .footer-subtitle {
@@ -82,6 +102,24 @@ const currentYear = computed(() => new Date().getFullYear())
 .footer-description {
   color: #95a5a6;
   line-height: 1.6;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  color: #95a5a6;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.social-link:hover {
+  color: #5af78e;
 }
 
 .footer-links {
@@ -106,6 +144,22 @@ const currentYear = computed(() => new Date().getFullYear())
 .contact-info p {
   color: #95a5a6;
   margin-bottom: 0.5rem;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-item {
+  background: rgba(90, 247, 142, 0.1);
+  color: #5af78e;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid rgba(90, 247, 142, 0.3);
 }
 
 .footer-bottom {

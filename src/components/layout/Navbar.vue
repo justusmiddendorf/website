@@ -4,7 +4,11 @@
       <!-- Logo/Brand -->
       <div class="navbar-brand">
         <router-link to="/" class="brand-link">
-          <span class="brand-text">MyApp</span>
+          <span class="brand-text">
+            <span class="code-bracket">&lt;</span>
+            justus
+            <span class="code-bracket">/&gt;</span>
+          </span>
         </router-link>
       </div>
 
@@ -25,21 +29,31 @@
         <ul class="navbar-nav">
           <li class="nav-item">
             <router-link to="/" class="nav-link" @click="closeMobileMenu">
+              <span class="nav-icon">🏠</span>
               Home
             </router-link>
           </li>
           <li class="nav-item">
             <router-link to="/about" class="nav-link" @click="closeMobileMenu">
-              Über uns
+              <span class="nav-icon">👨‍💻</span>
+              About
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/services" class="nav-link" @click="closeMobileMenu">
-              Services
+            <router-link to="/projects" class="nav-link" @click="closeMobileMenu">
+              <span class="nav-icon">🚀</span>
+              Projekte
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/skills" class="nav-link" @click="closeMobileMenu">
+              <span class="nav-icon">⚡</span>
+              Skills
             </router-link>
           </li>
           <li class="nav-item">
             <router-link to="/contact" class="nav-link" @click="closeMobileMenu">
+              <span class="nav-icon">📧</span>
               Kontakt
             </router-link>
           </li>
@@ -48,7 +62,8 @@
         <!-- CTA Button -->
         <div class="navbar-cta">
           <button class="cta-btn">
-            Jetzt starten
+            <span class="btn-icon">💼</span>
+            Hire Me
           </button>
         </div>
       </div>
@@ -122,10 +137,17 @@ onUnmounted(() => {
   font-size: 1.5rem;
   font-weight: 700;
   color: #2c3e50;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-family: 'Fira Code', 'Monaco', 'Cascadia Code', 'Roboto Mono', monospace;
+}
+
+.code-bracket {
+  color: #667eea;
+  font-weight: 900;
+}
+
+.brand-text:hover .code-bracket {
+  color: #764ba2;
+  transition: color 0.3s ease;
 }
 
 .mobile-menu-btn {
@@ -227,6 +249,15 @@ onUnmounted(() => {
 .cta-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.nav-icon {
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.btn-icon {
+  margin-right: 0.5rem;
 }
 
 /* Dark mode support */
