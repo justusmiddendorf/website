@@ -36,8 +36,8 @@
         
         <div class="hero-stats">
           <div class="stat">
-            <div class="stat-number">{{ coffeeCount }}</div>
-            <div class="stat-label">☕ Kaffee heute</div>
+            <div class="stat-number">{{ teaCount }}</div>
+            <div class="stat-label">🫖 Schwarzer Tee heute</div>
           </div>
           <div class="stat">
             <div class="stat-number">{{ codeLines }}</div>
@@ -139,7 +139,7 @@ const showCursor = ref(true)
 const fullText = 'Informatik-Student • Full-Stack Developer • Problem Solver'
 
 // Stats
-const coffeeCount = ref(0)
+const teaCount = ref(0)
 const codeLines = ref(0)
 const projectCount = ref(0)
 
@@ -201,14 +201,14 @@ const codeSnippet = ref(`interface Developer {
   name: string;
   status: "coding" | "learning" | "debugging";
   skills: string[];
-  caffeineLevel: number;
+  teaLevel: number;
 }
 
 const justus: Developer = {
   name: "Justus",
   status: "coding",
   skills: ["Vue.js", "Python", "TypeScript"],
-  caffeineLevel: 9000
+  teaLevel: 9000
 };
 
 console.log("Ready to build amazing things! 🚀");`)
@@ -227,12 +227,12 @@ const typeText = () => {
 }
 
 const animateStats = () => {
-  // Animate coffee count
-  const coffeeInterval = setInterval(() => {
-    if (coffeeCount.value < 7) {
-      coffeeCount.value++
+  // Animate tea count
+  const teaInterval = setInterval(() => {
+    if (teaCount.value < 7) {
+      teaCount.value++
     } else {
-      clearInterval(coffeeInterval)
+      clearInterval(teaInterval)
     }
   }, 200)
 

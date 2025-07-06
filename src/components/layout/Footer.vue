@@ -43,7 +43,7 @@
       </div>
       
       <div class="footer-bottom">
-        <p>&copy; {{ currentYear }} Justus - Informatik-Student • Made with ❤️ and lots of ☕</p>
+        <p>&copy; {{ currentYear }} Justus - Informatik-Student • Made with ❤️ and lots of 🫖</p>
       </div>
     </div>
   </footer>
