@@ -9,7 +9,7 @@
             <span class="code-bracket">/&gt;</span>
           </h3>
           <p class="footer-description">
-            Informatik-Student mit Leidenschaft für Clean Code und innovative Lösungen.
+            Open Source, KI, Green Tech, nachhaltige Software & Community – das sind meine Interessen.
           </p>
           <div class="social-links">
             <a href="#" class="social-link">💼 LinkedIn</a>
@@ -45,7 +45,7 @@
       </div>
       
       <div class="footer-bottom">
-        <p>&copy; {{ currentYear }} Justus - Informatik-Student • Made with ❤️ and lots of 🫖</p>
+        <p>© 2025 Justus – Open Source, Forschung & nachhaltige Software. Projekte: AutoWindLoc, Nextcloud Talk App, Renew (www.renew.de)</p>
       </div>
     </div>
   </footer>

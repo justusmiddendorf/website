@@ -38,13 +38,6 @@
             @click="openProject(project)"
           >
             <div class="project-image">
-              <div class="project-overlay">
-                <div class="project-actions">
-                  <button class="action-btn">👁️ View</button>
-                  <button class="action-btn">🔗 Live</button>
-                  <button class="action-btn">📂 Code</button>
-                </div>
-              </div>
             </div>
             
             <div class="project-content">
@@ -66,51 +59,9 @@
                   {{ tech }}
                 </span>
               </div>
-              
-              <div class="project-stats">
-                <span class="stat">⭐ {{ project.stars }}</span>
-                <span class="stat">🍴 {{ project.forks }}</span>
-                <span class="stat">📅 {{ project.lastUpdate }}</span>
-              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="contributions">
-      <div class="container">
-        <h2 class="section-title">
-          <span class="code-keyword">const</span> contributions = {
-        </h2>
-        
-        <div class="contributions-grid">
-          <div class="contribution-card">
-            <div class="contribution-icon">🔥</div>
-            <div class="contribution-stat">{{ totalCommits }}</div>
-            <div class="contribution-label">Commits dieses Jahr</div>
-          </div>
-          
-          <div class="contribution-card">
-            <div class="contribution-icon">📦</div>
-            <div class="contribution-stat">{{ totalProjects }}</div>
-            <div class="contribution-label">Projekte</div>
-          </div>
-          
-          <div class="contribution-card">
-            <div class="contribution-icon">🌟</div>
-            <div class="contribution-stat">{{ totalStars }}</div>
-            <div class="contribution-label">GitHub Stars</div>
-          </div>
-          
-          <div class="contribution-card">
-            <div class="contribution-icon">🤝</div>
-            <div class="contribution-stat">{{ contributions }}</div>
-            <div class="contribution-label">Open Source Beiträge</div>
-          </div>
-        </div>
-        
-        <div class="section-closing">}</div>
       </div>
     </section>
   </div>
@@ -125,81 +76,57 @@ const categories = ref(['Alle', 'Web Apps', 'Mobile', 'AI/ML', 'Tools', 'DevOps'
 const projects = ref([
   {
     id: 1,
-    title: 'EcoTech Dashboard',
-    description: 'Django-basierte Plattform mit Vue.js Frontend für Umweltdaten-Monitoring und KI-gestützte Analysen.',
-    category: 'Web Apps',
+    title: 'AutoWindLoc: Wind Turbine Localization',
+    description: 'Präzise Lokalisierung von Windkraftanlagen in hochauflösenden Orthophotos zur Verbesserung von Registern. Forschungsprojekt mit wissenschaftlicher Publikation.',
+    category: 'AI/ML',
     status: 'completed',
-    technologies: ['Django', 'Vue.js', 'PostgreSQL', 'TensorFlow', 'Docker'],
-    features: ['Real-time Monitoring', 'AI Analytics', 'Data Visualization', 'API Integration'],
-    stars: 127,
-    forks: 23,
-    lastUpdate: '2024-01',
-    image: '/projects/ecotech-dashboard.png'
+    technologies: ['Python', 'Computer Vision', 'Machine Learning', 'GIS', 'OpenCV'],
+    features: ['Automatic Detection', 'High-Resolution Analysis', 'Precise Localization', 'Register Enhancement']
   },
   {
     id: 2,
-    title: 'Smart Energy Mobile App',
-    description: 'Flutter-App für Energiemanagement mit Kafka-Streaming und intelligenter Verbrauchsanalyse.',
+    title: 'Nextcloud Talk Flutter App',
+    description: 'Mobile Flutter-Anwendung für Nextcloud Talk mit nativer Integration und erweiterten Chat-Features.',
     category: 'Mobile',
-    status: 'in-progress',
-    technologies: ['Flutter', 'Dart', 'Kafka', 'Python', 'Docker'],
-    features: ['Real-time Streaming', 'Energy Analytics', 'Smart Notifications', 'Cross-platform'],
-    stars: 89,
-    forks: 15,
-    lastUpdate: '2024-01',
-    image: '/projects/energy-app.png'
+    status: 'completed',
+    technologies: ['Flutter', 'Dart', 'REST API', 'WebSocket', 'Android/iOS'],
+    features: ['Real-time Chat', 'Voice Calls', 'File Sharing', 'Native Performance']
   },
   {
     id: 3,
-    title: 'AI-Powered Analytics Platform',
-    description: 'Java-Backend mit React-Frontend für maschinelles Lernen und Datenvisualisierung.',
-    category: 'AI/ML',
-    status: 'completed',
-    technologies: ['Java', 'React', 'TensorFlow', 'Kubernetes', 'PostgreSQL'],
-    features: ['ML Pipeline', 'Data Visualization', 'Scalable Architecture', 'Real-time Processing'],
-    stars: 156,
-    forks: 34,
-    lastUpdate: '2023-12',
-    image: '/projects/ai-analytics.png'
+    title: 'Renew – The Reference Net Workshop',
+    description: 'Mitentwicklung am Open-Source-Framework Renew (The Reference Net Workshop, www.renew.de) – einer leistungsfähigen Plattform zur Modellierung, Simulation und Analyse von Petri-Netzen. Beiträge u.a. an der Weiterentwicklung des Referenznetzeditors, an verteilten und hybriden Systemen sowie an der Integration neuer Features für Forschung und Lehre.',
+    category: 'Tools',
+    status: 'in-progress',
+    technologies: ['Java', 'Petri Nets', 'Distributed Systems', 'GUI', 'Open Source'],
+    features: ['Graphical Net Editor', 'Distributed/Hybrid Simulation', 'Extensible Plugin System', 'Academic Community']
   },
   {
     id: 4,
-    title: 'DevOps Pipeline Manager',
-    description: 'Kubernetes-basierte Plattform für CI/CD-Pipeline-Management mit Docker-Integration.',
-    category: 'Tools',
+    title: 'Distributed P/T-Nets Scalability (Renew)',
+    description: 'Forschung und Entwicklung zur Skalierbarkeit von verteilten Petri-Netzen im Renew-Framework. Fokus auf Performance-Optimierung und Verteilungsstrategien.',
+    category: 'DevOps',
     status: 'completed',
-    technologies: ['Python', 'Kubernetes', 'Docker', 'Git', 'JavaScript'],
-    features: ['Pipeline Automation', 'Container Management', 'Git Integration', 'Monitoring Dashboard'],
-    stars: 234,
-    forks: 45,
-    lastUpdate: '2023-11',
-    image: '/projects/devops-manager.png'
+    technologies: ['Java', 'Petri Nets', 'Distributed Systems', 'Performance Analysis', 'Algorithms'],
+    features: ['Scalability Analysis', 'Distributed Computing', 'Network Optimization', 'Performance Metrics']
   },
   {
     id: 5,
-    title: 'Stream Processing Engine',
-    description: 'Kafka-basierte Event-Streaming-Plattform mit TensorFlow für Echtzeit-Datenanalyse.',
-    category: 'AI/ML',
-    status: 'in-progress',
-    technologies: ['Kafka', 'Python', 'TensorFlow', 'Django', 'Jupyter'],
-    features: ['Real-time Processing', 'ML Integration', 'Data Streaming', 'Analytics Dashboard'],
-    stars: 78,
-    forks: 12,
-    lastUpdate: '2024-01',
-    image: '/projects/stream-processing.png'
+    title: 'Portfolio Website',
+    description: 'Diese moderne Vue.js Website mit responsivem Design, Dark Mode Support und performanter Architektur.',
+    category: 'Web Apps',
+    status: 'completed',
+    technologies: ['Vue.js', 'JavaScript', 'CSS3', 'Vite', 'Responsive Design'],
+    features: ['Modern UI/UX', 'Dark Mode', 'Mobile Responsive', 'Fast Performance']
   },
   {
     id: 6,
-    title: 'Multi-Platform Task Manager',
-    description: 'Cross-platform Task Manager mit Flutter, Django-Backend und PostgreSQL-Datenbank.',
-    category: 'Mobile',
-    status: 'completed',
-    technologies: ['Flutter', 'Django', 'PostgreSQL', 'HTML/CSS', 'Docker'],
-    features: ['Cross-platform', 'Real-time Sync', 'Task Automation', 'Team Collaboration'],
-    stars: 145,
-    forks: 28,
-    lastUpdate: '2023-10',
-    image: '/projects/snake-game.png'
+    title: 'Green Tech Innovation Projects',
+    description: 'Verschiedene kleinere Projekte im Bereich nachhaltiger Technologien und Umweltmonitoring mit KI-Integration.',
+    category: 'AI/ML',
+    status: 'in-progress',
+    technologies: ['Python', 'TensorFlow', 'IoT', 'Environmental Data', 'Django'],
+    features: ['Environmental Monitoring', 'AI Analytics', 'Sustainability Focus', 'Data Visualization']
   }
 ])
 
@@ -209,11 +136,6 @@ const filteredProjects = computed(() => {
   }
   return projects.value.filter(project => project.category === activeCategory.value)
 })
-
-const totalCommits = ref(1247)
-const totalProjects = computed(() => projects.value.length)
-const totalStars = computed(() => projects.value.reduce((sum, project) => sum + project.stars, 0))
-const contributions = ref(67)
 
 const setActiveCategory = (category) => {
   activeCategory.value = category
@@ -338,45 +260,6 @@ const openProject = (project) => {
   overflow: hidden;
 }
 
-.project-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.project-card:hover .project-overlay {
-  opacity: 1;
-}
-
-.project-actions {
-  display: flex;
-  gap: 1rem;
-}
-
-.action-btn {
-  padding: 0.5rem 1rem;
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 20px;
-  color: white;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
-}
-
-.action-btn:hover {
-  background: rgba(255, 255, 255, 0.3);
-  transform: translateY(-2px);
-}
-
 .project-content {
   padding: 2rem;
 }
@@ -445,85 +328,6 @@ const openProject = (project) => {
   border: 1px solid rgba(102, 126, 234, 0.2);
 }
 
-.project-stats {
-  display: flex;
-  gap: 1rem;
-  padding-top: 1rem;
-  border-top: 1px solid #e9ecef;
-}
-
-.stat {
-  font-size: 0.9rem;
-  color: #7f8c8d;
-  font-family: 'Fira Code', monospace;
-}
-
-.contributions {
-  padding: 6rem 0;
-  background: #2c3e50;
-  color: white;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-  font-family: 'Fira Code', monospace;
-  text-align: center;
-}
-
-.code-keyword {
-  color: #5af78e;
-  font-weight: 700;
-}
-
-.section-closing {
-  font-size: 2rem;
-  color: #5af78e;
-  font-family: 'Fira Code', monospace;
-  font-weight: 700;
-  text-align: center;
-  margin-top: 3rem;
-}
-
-.contributions-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
-
-.contribution-card {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 2rem;
-  border-radius: 15px;
-  text-align: center;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.contribution-card:hover {
-  transform: translateY(-5px);
-}
-
-.contribution-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.contribution-stat {
-  font-size: 3rem;
-  font-weight: 800;
-  color: #5af78e;
-  font-family: 'Fira Code', monospace;
-  margin-bottom: 0.5rem;
-}
-
-.contribution-label {
-  opacity: 0.9;
-  font-size: 0.9rem;
-}
-
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
   .projects-filter {
@@ -560,14 +364,6 @@ const openProject = (project) => {
   .feature-item {
     color: #ecf0f1;
   }
-
-  .project-stats {
-    border-color: #34495e;
-  }
-
-  .stat {
-    color: #bdc3c7;
-  }
 }
 
 /* Mobile responsive */
@@ -582,19 +378,6 @@ const openProject = (project) => {
 
   .project-card {
     margin: 0 1rem;
-  }
-
-  .project-actions {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .contributions-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .contribution-stat {
-    font-size: 2rem;
   }
 }
 </style>

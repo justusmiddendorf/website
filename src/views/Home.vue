@@ -187,21 +187,21 @@ const skillCategories = ref([
 const featuredProjects = ref([
   {
     id: 1,
-    title: 'EcoTech Dashboard',
-    description: 'Django-basierte Plattform mit Vue.js Frontend für Umweltdaten-Monitoring und KI-gestützte Analysen',
-    technologies: ['Django', 'Vue.js', 'PostgreSQL', 'TensorFlow']
+    title: 'AutoWindLoc: Wind Turbine Localization',
+    description: 'Präzise Lokalisierung von Windkraftanlagen in Orthophotos. Forschungsprojekt mit Publikation.',
+    technologies: ['Python', 'Computer Vision', 'Machine Learning', 'GIS', 'OpenCV']
   },
   {
     id: 2,
-    title: 'Smart Energy Mobile App',
-    description: 'Flutter-App für Energiemanagement mit Kafka-Streaming und Docker-Deployment',
-    technologies: ['Flutter', 'Dart', 'Kafka', 'Docker']
+    title: 'Nextcloud Talk Flutter App',
+    description: 'Flutter-App für Nextcloud Talk mit nativer Integration und Chat-Features.',
+    technologies: ['Flutter', 'Dart', 'REST API', 'WebSocket']
   },
   {
     id: 3,
-    title: 'AI-Powered Analytics Platform',
-    description: 'Java-Backend mit React-Frontend für maschinelles Lernen und Datenvisualisierung',
-    technologies: ['Java', 'React', 'TensorFlow', 'Kubernetes']
+    title: 'Renew – The Reference Net Workshop',
+    description: 'Mitentwicklung am Open-Source-Framework Renew (www.renew.de) für Petri-Netze und verteilte Systeme.',
+    technologies: ['Java', 'Petri Nets', 'Distributed Systems', 'GUI']
   }
 ])
 
