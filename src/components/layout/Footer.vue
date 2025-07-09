@@ -32,12 +32,14 @@
         <div class="footer-section">
           <h4 class="footer-subtitle">Tech Stack</h4>
           <div class="tech-stack">
+            <span class="tech-item">Django</span>
             <span class="tech-item">Vue.js</span>
-            <span class="tech-item">TypeScript</span>
-            <span class="tech-item">Node.js</span>
             <span class="tech-item">Python</span>
+            <span class="tech-item">Java</span>
+            <span class="tech-item">Flutter</span>
             <span class="tech-item">PostgreSQL</span>
             <span class="tech-item">Docker</span>
+            <span class="tech-item">TensorFlow</span>
           </div>
         </div>
       </div>

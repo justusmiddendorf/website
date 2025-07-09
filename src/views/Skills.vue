@@ -120,130 +120,146 @@ import { ref } from 'vue'
 
 const skillCategories = ref([
   {
-    name: 'Frontend Development',
-    skills: [
-      {
-        name: 'Vue.js',
-        level: 90,
-        description: 'Mein Lieblings-Framework für moderne Web-Apps',
-        experience: '2+ Jahre'
-      },
-      {
-        name: 'React',
-        level: 85,
-        description: 'Solide Erfahrung mit Hooks und Context API',
-        experience: '1.5+ Jahre'
-      },
-      {
-        name: 'TypeScript',
-        level: 80,
-        description: 'Type-safe JavaScript für bessere Codequalität',
-        experience: '1+ Jahr'
-      },
-      {
-        name: 'CSS/SCSS',
-        level: 85,
-        description: 'Responsive Design und moderne CSS-Features',
-        experience: '3+ Jahre'
-      },
-      {
-        name: 'JavaScript',
-        level: 88,
-        description: 'ES6+, Async/Await, DOM-Manipulation',
-        experience: '3+ Jahre'
-      }
-    ]
-  },
-  {
     name: 'Backend Development',
     skills: [
       {
-        name: 'Node.js',
-        level: 85,
-        description: 'RESTful APIs und Microservices',
+        name: 'Django',
+        level: 95,
+        description: 'Python Web-Framework für robuste Anwendungen',
         experience: '2+ Jahre'
       },
       {
         name: 'Python',
         level: 90,
-        description: 'Django, Flask, FastAPI und Data Science',
+        description: 'Vielseitige Sprache für Backend und Data Science',
         experience: '3+ Jahre'
       },
       {
         name: 'Java',
-        level: 75,
-        description: 'Spring Boot und enterprise Anwendungen',
-        experience: '1+ Jahr'
+        level: 85,
+        description: 'Enterprise-Anwendungen und Spring Framework',
+        experience: '2+ Jahre'
       },
       {
         name: 'PostgreSQL',
-        level: 80,
+        level: 85,
         description: 'Relationale Datenbanken und komplexe Queries',
         experience: '2+ Jahre'
-      },
-      {
-        name: 'MongoDB',
-        level: 75,
-        description: 'NoSQL-Datenbanken für flexible Datenstrukturen',
-        experience: '1+ Jahr'
       }
     ]
   },
   {
-    name: 'DevOps & Tools',
+    name: 'Frontend Development',
     skills: [
       {
-        name: 'Git',
+        name: 'Vue.js',
         level: 90,
-        description: 'Versionskontrolle und Collaboration',
+        description: 'Modernes JavaScript-Framework für SPAs',
+        experience: '2+ Jahre'
+      },
+      {
+        name: 'React',
+        level: 85,
+        description: 'Komponenten-basierte UI-Entwicklung',
+        experience: '1.5+ Jahre'
+      },
+      {
+        name: 'JavaScript',
+        level: 90,
+        description: 'ES6+, Async/Await, moderne Features',
         experience: '3+ Jahre'
       },
       {
-        name: 'Docker',
-        level: 75,
-        description: 'Containerisierung und Deployment',
-        experience: '1+ Jahr'
-      },
-      {
-        name: 'AWS',
-        level: 70,
-        description: 'Cloud-Services und Serverless Architecture',
-        experience: '6+ Monate'
-      },
-      {
-        name: 'Linux',
+        name: 'HTML/CSS',
         level: 85,
-        description: 'Command Line und Server-Administration',
-        experience: '2+ Jahre'
+        description: 'Responsive Design und moderne CSS-Features',
+        experience: '3+ Jahre'
       }
     ]
   },
   {
-    name: 'Machine Learning',
+    name: 'Mobile Development',
+    skills: [
+      {
+        name: 'Flutter',
+        level: 85,
+        description: 'Cross-platform mobile App-Entwicklung',
+        experience: '4+ Jahr'
+      },
+      {
+        name: 'Dart',
+        level: 80,
+        description: 'Programmiersprache für Flutter-Apps',
+        experience: '4+ Jahr'
+      }
+    ]
+  },
+  {
+    name: 'DevOps & Infrastructure',
+    skills: [
+      {
+        name: 'Docker',
+        level: 85,
+        description: 'Containerization und Microservices',
+        experience: '3+ Jahre'
+      },
+      {
+        name: 'Kubernetes',
+        level: 75,
+        description: 'Container-Orchestrierung und Skalierung',
+        experience: '1+ Jahr'
+      },
+      {
+        name: 'Git',
+        level: 95,
+        description: 'Versionskontrolle und Collaboration',
+        experience: '5+ Jahre'
+      }
+    ]
+  },
+  {
+    name: 'Data Science & AI',
     skills: [
       {
         name: 'TensorFlow',
-        level: 70,
-        description: 'Deep Learning und Neural Networks',
-        experience: '6+ Monate'
-      },
-      {
-        name: 'Scikit-learn',
-        level: 75,
-        description: 'Classical Machine Learning Algorithmen',
-        experience: '1+ Jahr'
-      },
-      {
-        name: 'Pandas',
         level: 80,
-        description: 'Data Analysis und Manipulation',
-        experience: '1+ Jahr'
+        description: 'Machine Learning und Deep Learning',
+        experience: '2+ Jahre'
       },
       {
         name: 'Jupyter',
-        level: 85,
-        description: 'Data Science und Prototyping',
+        level: 80,
+        description: 'Data Analysis und Prototyping',
+        experience: '2+ Jahre'
+      },
+      {
+        name: 'Kafka',
+        level: 75,
+        description: 'Event Streaming und Data Pipelines',
         experience: '1+ Jahr'
+      }
+    ]
+  },
+  {
+    name: 'Operating Systems',
+    skills: [
+      {
+        name: 'Ubuntu',
+        level: 95,
+        description: 'Linux-Administration und Server-Setup',
+        experience: '3+ Jahre'
+      },
+      {
+        name: 'Windows',
+        level: 90,
+        description: 'Desktop-Entwicklung und Administration',
+        experience: '5+ Jahre'
+      },
+      {
+        name: 'macOS',
+        level: 80,
+        description: 'Entwicklung und Design auf Apple-Plattformen',
+        experience: '2+ Jahr'
       }
     ]
   }
@@ -251,73 +267,73 @@ const skillCategories = ref([
 
 const favoriteTools = ref([
   {
-    name: 'VS Code',
-    icon: '⚡',
-    description: 'Mein täglich genutzter Code-Editor mit unzähligen Extensions',
+    name: 'Django',
+    icon: '🐍',
+    description: 'Mein bevorzugtes Python-Framework für Backend-Entwicklung',
     rating: 5
   },
   {
-    name: 'GitHub',
-    icon: '🐙',
-    description: 'Versionskontrolle und Zusammenarbeit mit anderen Entwicklern',
+    name: 'Vue.js',
+    icon: '�',
+    description: 'Elegantes JavaScript-Framework für moderne UIs',
     rating: 5
   },
   {
-    name: 'Postman',
-    icon: '🚀',
-    description: 'API-Testing und Dokumentation',
+    name: 'Docker',
+    icon: '�',
+    description: 'Containerization für konsistente Entwicklungsumgebungen',
+    rating: 5
+  },
+  {
+    name: 'Flutter',
+    icon: '📱',
+    description: 'Cross-platform mobile App-Entwicklung',
     rating: 4
   },
   {
-    name: 'Figma',
-    icon: '🎨',
-    description: 'UI/UX Design und Prototyping',
+    name: 'PostgreSQL',
+    icon: '�',
+    description: 'Robuste relationale Datenbank für komplexe Anwendungen',
+    rating: 5
+  },
+  {
+    name: 'Jupyter',
+    icon: '�',
+    description: 'Interactive Data Science und Prototyping',
     rating: 4
-  },
-  {
-    name: 'Notion',
-    icon: '📝',
-    description: 'Projektmanagement und Dokumentation',
-    rating: 5
-  },
-  {
-    name: 'Terminal',
-    icon: '💻',
-    description: 'Kommandozeile für effiziente Workflows',
-    rating: 5
   }
 ])
 
 const learningPath = ref([
   {
     id: 1,
-    title: 'Rust Programming Language',
-    description: 'Lernen einer system-nahen Programmiersprache für Performance-kritische Anwendungen',
-    tags: ['Systems Programming', 'Performance', 'Memory Safety'],
+    title: 'Advanced Kubernetes',
+    description: 'Vertiefung in Container-Orchestrierung und Cloud-Native Patterns',
+    tags: ['DevOps', 'Cloud', 'Kubernetes'],
     status: 'in-progress',
-    progress: 35
+    progress: 45
   },
   {
     id: 2,
-    title: 'Kubernetes',
-    description: 'Container-Orchestrierung für Microservices in der Cloud',
-    tags: ['DevOps', 'Cloud', 'Orchestration'],
+    title: 'Advanced TensorFlow',
+    description: 'Deep Learning und Neural Networks für produktive AI-Anwendungen',
+    tags: ['AI', 'Machine Learning', 'TensorFlow'],
     status: 'planning',
     progress: 0
   },
   {
     id: 3,
-    title: 'GraphQL',
-    description: 'Moderne API-Entwicklung als Alternative zu REST',
-    tags: ['API', 'Backend', 'Query Language'],
+    title: 'Flutter Advanced',
+    description: 'State Management und Performance-Optimierung für Mobile Apps',
+    tags: ['Mobile', 'Flutter', 'Dart'],
     status: 'in-progress',
     progress: 60
   },
   {
     id: 4,
-    title: 'React Native',
-    description: 'Cross-Platform Mobile App Development',
-    tags: ['Mobile', 'Cross-Platform', 'React'],
+    title: 'Kafka Streams',
+    description: 'Event-Driven Architecture und Stream Processing',
+    tags: ['Streaming', 'Kafka', 'Architecture'],
     status: 'completed',
     progress: 100
   }

@@ -120,82 +120,82 @@
 import { computed, ref } from 'vue'
 
 const activeCategory = ref('Alle')
-const categories = ref(['Alle', 'Web Apps', 'Mobile', 'Tools', 'Games', 'AI/ML'])
+const categories = ref(['Alle', 'Web Apps', 'Mobile', 'AI/ML', 'Tools', 'DevOps'])
 
 const projects = ref([
   {
     id: 1,
-    title: 'Smart Todo AI',
-    description: 'KI-gestützte Todo-App mit intelligenter Priorisierung, Zeitmanagement und automatischer Kategorisierung.',
+    title: 'EcoTech Dashboard',
+    description: 'Django-basierte Plattform mit Vue.js Frontend für Umweltdaten-Monitoring und KI-gestützte Analysen.',
     category: 'Web Apps',
     status: 'completed',
-    technologies: ['Vue.js', 'Node.js', 'MongoDB', 'OpenAI API', 'Socket.io'],
-    features: ['KI-Priorisierung', 'Real-time Sync', 'Smart Notifications', 'Analytics Dashboard'],
+    technologies: ['Django', 'Vue.js', 'PostgreSQL', 'TensorFlow', 'Docker'],
+    features: ['Real-time Monitoring', 'AI Analytics', 'Data Visualization', 'API Integration'],
     stars: 127,
     forks: 23,
     lastUpdate: '2024-01',
-    image: '/projects/smart-todo.png'
+    image: '/projects/ecotech-dashboard.png'
   },
   {
     id: 2,
-    title: 'CodeSnippet Manager',
-    description: 'Plattform zum Organisieren und Teilen von Code-Snippets mit Syntax-Highlighting und Kollaboration.',
-    category: 'Web Apps',
+    title: 'Smart Energy Mobile App',
+    description: 'Flutter-App für Energiemanagement mit Kafka-Streaming und intelligenter Verbrauchsanalyse.',
+    category: 'Mobile',
     status: 'in-progress',
-    technologies: ['React', 'TypeScript', 'Express', 'PostgreSQL', 'Redis'],
-    features: ['Syntax Highlighting', 'Code Sharing', 'Team Collaboration', 'Search & Filter'],
+    technologies: ['Flutter', 'Dart', 'Kafka', 'Python', 'Docker'],
+    features: ['Real-time Streaming', 'Energy Analytics', 'Smart Notifications', 'Cross-platform'],
     stars: 89,
     forks: 15,
     lastUpdate: '2024-01',
-    image: '/projects/code-manager.png'
+    image: '/projects/energy-app.png'
   },
   {
     id: 3,
-    title: 'Campus Event Tracker',
-    description: 'Event-Management-System für Universitätscampus mit Echtzeit-Updates und Push-Benachrichtigungen.',
-    category: 'Web Apps',
+    title: 'AI-Powered Analytics Platform',
+    description: 'Java-Backend mit React-Frontend für maschinelles Lernen und Datenvisualisierung.',
+    category: 'AI/ML',
     status: 'completed',
-    technologies: ['Vue.js', 'Firebase', 'PWA', 'WebSocket', 'Tailwind CSS'],
-    features: ['Real-time Updates', 'Push Notifications', 'Event Calendar', 'User Authentication'],
-    stars: 56,
-    forks: 8,
+    technologies: ['Java', 'React', 'TensorFlow', 'Kubernetes', 'PostgreSQL'],
+    features: ['ML Pipeline', 'Data Visualization', 'Scalable Architecture', 'Real-time Processing'],
+    stars: 156,
+    forks: 34,
     lastUpdate: '2023-12',
-    image: '/projects/campus-events.png'
+    image: '/projects/ai-analytics.png'
   },
   {
     id: 4,
-    title: 'Dev Portfolio Builder',
-    description: 'Tool zum automatischen Generieren von Developer-Portfolios basierend auf GitHub-Aktivität.',
+    title: 'DevOps Pipeline Manager',
+    description: 'Kubernetes-basierte Plattform für CI/CD-Pipeline-Management mit Docker-Integration.',
     category: 'Tools',
     status: 'completed',
-    technologies: ['Python', 'GitHub API', 'Jinja2', 'CSS', 'JavaScript'],
-    features: ['GitHub Integration', 'Template System', 'Auto-Generation', 'SEO Optimization'],
+    technologies: ['Python', 'Kubernetes', 'Docker', 'Git', 'JavaScript'],
+    features: ['Pipeline Automation', 'Container Management', 'Git Integration', 'Monitoring Dashboard'],
     stars: 234,
     forks: 45,
     lastUpdate: '2023-11',
-    image: '/projects/portfolio-builder.png'
+    image: '/projects/devops-manager.png'
   },
   {
     id: 5,
-    title: 'ML Study Buddy',
-    description: 'Machine Learning-Anwendung, die Lernmaterialien analysiert und personalisierte Lernpläne erstellt.',
+    title: 'Stream Processing Engine',
+    description: 'Kafka-basierte Event-Streaming-Plattform mit TensorFlow für Echtzeit-Datenanalyse.',
     category: 'AI/ML',
     status: 'in-progress',
-    technologies: ['Python', 'TensorFlow', 'FastAPI', 'React', 'Docker'],
-    features: ['Content Analysis', 'Personalized Learning', 'Progress Tracking', 'Study Recommendations'],
+    technologies: ['Kafka', 'Python', 'TensorFlow', 'Django', 'Jupyter'],
+    features: ['Real-time Processing', 'ML Integration', 'Data Streaming', 'Analytics Dashboard'],
     stars: 78,
     forks: 12,
     lastUpdate: '2024-01',
-    image: '/projects/ml-study-buddy.png'
+    image: '/projects/stream-processing.png'
   },
   {
     id: 6,
-    title: 'Retro Snake Game',
-    description: 'Moderne Interpretation des klassischen Snake-Spiels mit WebGL-Rendering und Online-Multiplayer.',
-    category: 'Games',
+    title: 'Multi-Platform Task Manager',
+    description: 'Cross-platform Task Manager mit Flutter, Django-Backend und PostgreSQL-Datenbank.',
+    category: 'Mobile',
     status: 'completed',
-    technologies: ['JavaScript', 'WebGL', 'Socket.io', 'Node.js', 'Canvas API'],
-    features: ['WebGL Graphics', 'Multiplayer Mode', 'Leaderboards', 'Custom Themes'],
+    technologies: ['Flutter', 'Django', 'PostgreSQL', 'HTML/CSS', 'Docker'],
+    features: ['Cross-platform', 'Real-time Sync', 'Task Automation', 'Team Collaboration'],
     stars: 145,
     forks: 28,
     lastUpdate: '2023-10',

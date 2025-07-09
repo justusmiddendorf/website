@@ -29,9 +29,9 @@
         </h1>
         <p class="hero-subtitle">
           Informatik-Student mit Leidenschaft für 
-          <span class="tech-highlight">Clean Code</span>, 
-          <span class="tech-highlight">Web Development</span> & 
-          <span class="tech-highlight">Innovation</span>
+          <span class="tech-highlight">Softwareentwicklung</span>, 
+          <span class="tech-highlight">KI</span> & 
+          <span class="tech-highlight">Grüne Innovation</span>
         </p>
         
         <div class="hero-stats">
@@ -136,7 +136,7 @@ import { onMounted, ref } from 'vue'
 // Typing animation
 const typedText = ref('')
 const showCursor = ref(true)
-const fullText = 'Informatik-Student • Full-Stack Developer • Problem Solver'
+const fullText = 'Informatik-Student • Software-Entwickler • KI-Enthusiast • Green-Tech Innovator'
 
 // Stats
 const teaCount = ref(0)
@@ -146,30 +146,39 @@ const projectCount = ref(0)
 // Skills data
 const skillCategories = ref([
   {
+    name: 'Backend',
+    skills: [
+      { name: 'Django', level: 90 },
+      { name: 'Python', level: 90 },
+      { name: 'Java', level: 85 },
+      { name: 'PostgreSQL', level: 85 }
+    ]
+  },
+  {
     name: 'Frontend',
     skills: [
       { name: 'Vue.js', level: 90 },
       { name: 'React', level: 85 },
-      { name: 'TypeScript', level: 80 },
-      { name: 'CSS/SCSS', level: 85 }
+      { name: 'JavaScript', level: 90 },
+      { name: 'HTML/CSS', level: 85 }
     ]
   },
   {
-    name: 'Backend',
+    name: 'Mobile & DevOps',
     skills: [
-      { name: 'Node.js', level: 85 },
-      { name: 'Python', level: 90 },
-      { name: 'Java', level: 75 },
-      { name: 'PostgreSQL', level: 80 }
+      { name: 'Flutter/Dart', level: 80 },
+      { name: 'Docker', level: 85 },
+      { name: 'Kubernetes', level: 75 },
+      { name: 'Git', level: 90 }
     ]
   },
   {
-    name: 'Tools',
+    name: 'Data & AI',
     skills: [
-      { name: 'Git', level: 90 },
-      { name: 'Docker', level: 75 },
-      { name: 'AWS', level: 70 },
-      { name: 'Linux', level: 85 }
+      { name: 'TensorFlow', level: 80 },
+      { name: 'Jupyter', level: 85 },
+      { name: 'Kafka', level: 75 },
+      { name: 'Ubuntu/Windows', level: 90 }
     ]
   }
 ])
@@ -178,40 +187,42 @@ const skillCategories = ref([
 const featuredProjects = ref([
   {
     id: 1,
-    title: 'Smart Todo App',
-    description: 'KI-gestützte Todo-App mit intelligenter Priorisierung und Zeitmanagement',
-    technologies: ['Vue.js', 'Node.js', 'MongoDB', 'AI/ML']
+    title: 'EcoTech Dashboard',
+    description: 'Django-basierte Plattform mit Vue.js Frontend für Umweltdaten-Monitoring und KI-gestützte Analysen',
+    technologies: ['Django', 'Vue.js', 'PostgreSQL', 'TensorFlow']
   },
   {
     id: 2,
-    title: 'Code Snippet Manager',
-    description: 'Plattform zum Organisieren und Teilen von Code-Snippets mit Syntax-Highlighting',
-    technologies: ['React', 'Express', 'PostgreSQL', 'Redis']
+    title: 'Smart Energy Mobile App',
+    description: 'Flutter-App für Energiemanagement mit Kafka-Streaming und Docker-Deployment',
+    technologies: ['Flutter', 'Dart', 'Kafka', 'Docker']
   },
   {
     id: 3,
-    title: 'Campus Event Tracker',
-    description: 'Event-Management-System für Universitätscampus mit Echtzeit-Updates',
-    technologies: ['Vue.js', 'Firebase', 'PWA', 'WebSocket']
+    title: 'AI-Powered Analytics Platform',
+    description: 'Java-Backend mit React-Frontend für maschinelles Lernen und Datenvisualisierung',
+    technologies: ['Java', 'React', 'TensorFlow', 'Kubernetes']
   }
 ])
 
 // Code snippet for visual
-const codeSnippet = ref(`interface Developer {
+const codeSnippet = ref(`interface FullStackDeveloper {
   name: string;
-  status: "coding" | "learning" | "debugging";
-  skills: string[];
+  status: "coding" | "deploying" | "learning";
+  technologies: string[];
   teaLevel: number;
+  environments: string[];
 }
 
-const justus: Developer = {
+const justus: FullStackDeveloper = {
   name: "Justus",
   status: "coding",
-  skills: ["Vue.js", "Python", "TypeScript"],
-  teaLevel: 9000
+  technologies: ["Django", "Vue.js", "Flutter", "Docker"],
+  teaLevel: 9000,
+  environments: ["Ubuntu", "Windows", "Kubernetes"]
 };
 
-console.log("Ready to build amazing things! 🚀");`)
+console.log("Building scalable solutions! 🚀");`)
 
 // Animations
 const typeText = () => {

@@ -10,7 +10,8 @@
           </h1>
           <p class="about-intro">
             Informatik-Student im {{ currentSemester }}. Semester mit einer Leidenschaft für 
-            eleganten Code, innovative Lösungen und die endlose Welt der Technologie.
+            Softwareentwicklung, KI und grüne Innovation. Spezialisiert auf Full-Stack-Entwicklung 
+            mit modernen Frameworks und Cloud-Technologien.
           </p>
         </div>
       </div>
@@ -81,62 +82,62 @@ const currentYear = new Date().getFullYear()
 const startYear = 2022
 const currentSemester = computed(() => {
   const yearsElapsed = currentYear - startYear
-  return (yearsElapsed * 2) + 1 // Assuming we're in winter semester
+  return (yearsElapsed * 2)  // Assuming we're in sommer semester
 })
 
 const timeline = ref([
   {
     year: '2024',
-    title: 'Advanced Web Development',
-    description: 'Vertiefung in moderne Frameworks wie Vue.js, React und Backend-Entwicklung mit Node.js und Python.'
+    title: 'Full-Stack & Cloud Mastery',
+    description: 'Vertiefung in Django, Flutter, Docker/Kubernetes und TensorFlow für KI-Anwendungen.'
   },
   {
     year: '2023',
-    title: 'Erste große Projekte',
-    description: 'Entwicklung mehrerer Full-Stack-Anwendungen und Teilnahme an Hackathons und Programmierwettbewerben.'
+    title: 'Enterprise Development',
+    description: 'Entwicklung skalierbare Anwendungen mit Java, PostgreSQL und Kafka für Datenstreaming.'
   },
   {
     year: '2022',
-    title: 'Informatik-Studium begonnen',
-    description: 'Start des Informatik-Studiums mit Fokus auf Softwareentwicklung und Algorithmen.'
+    title: 'Informatik-Studium & Web-Fokus',
+    description: 'Studienstart mit Spezialisierung auf Vue.js, React und moderne JavaScript-Frameworks.'
   },
   {
     year: '2021',
-    title: 'Erste Schritte in der Programmierung',
-    description: 'Selbststudium in HTML, CSS, JavaScript und Python. Erste kleine Projekte und Tutorials.'
+    title: 'Grundlagen der Programmierung',
+    description: 'Erste Schritte mit Python, HTML/CSS und Git. Aufbau eines soliden Fundaments.'
   }
 ])
 
 const interests = ref([
   {
-    name: 'Web Development',
-    icon: '🌐',
-    description: 'Moderne Webanwendungen mit Vue.js, React und Node.js entwickeln.'
-  },
-  {
-    name: 'Machine Learning',
-    icon: '🤖',
-    description: 'KI-Algorithmen verstehen und praktisch anwenden.'
-  },
-  {
-    name: 'Open Source',
-    icon: '🔓',
-    description: 'Zur Open-Source-Community beitragen und von ihr lernen.'
-  },
-  {
-    name: 'Clean Code',
-    icon: '✨',
-    description: 'Wartbaren, lesbaren und eleganten Code schreiben.'
-  },
-  {
-    name: 'DevOps',
+    name: 'Backend Development',
     icon: '⚙️',
-    description: 'Automatisierung und effiziente Deployment-Pipelines.'
+    description: 'Django, Python, Java - robuste Server-Anwendungen entwickeln.'
   },
   {
-    name: 'Problem Solving',
-    icon: '🧩',
-    description: 'Komplexe Probleme in elegante Lösungen verwandeln.'
+    name: 'Frontend Development',
+    icon: '🌐',
+    description: 'Vue.js, React, HTML/CSS - moderne, responsive Benutzeroberflächen.'
+  },
+  {
+    name: 'Mobile Development',
+    icon: '�',
+    description: 'Flutter, Dart - plattformübergreifende mobile Apps.'
+  },
+  {
+    name: 'DevOps & Cloud',
+    icon: '☁️',
+    description: 'Docker, Kubernetes, Git - automatisierte Deployment-Pipelines.'
+  },
+  {
+    name: 'Data Science & AI',
+    icon: '🤖',
+    description: 'TensorFlow, Jupyter, Python - maschinelles Lernen und Datenanalyse.'
+  },
+  {
+    name: 'Database & Streaming',
+    icon: '💾',
+    description: 'PostgreSQL, Kafka - skalierbare Datenarchitekturen.'
   }
 ])
 </script>
