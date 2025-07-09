@@ -77,6 +77,7 @@
 
 <script setup>
 import { computed, ref } from 'vue'
+import { interests as interestsData, timeline as timelineData } from '../data/about.js'
 
 const currentYear = new Date().getFullYear()
 const startYear = 2022
@@ -85,56 +86,8 @@ const currentSemester = computed(() => {
   return (yearsElapsed * 2)  // Assuming we're in sommer semester
 })
 
-const timeline = ref([
-  {
-    year: '2025',
-    title: 'Erste Veröffentlichung',
-    description: 'AutoWindLoc: Precise Localization of Wind Turbines in High-Resolution Orthophotos for Enhanced Registers'
-  },
-  {
-    year: '2022',
-    title: 'Informatik-Studium',
-    description: 'Studienbeginn an der Universität mit Fokus auf Softwareentwicklung und Datenbanken.'
-  },
-  {
-    year: '2022',
-    title: 'Abitur',
-    description: 'Abschluss der Schulausbildung mit Fokus auf Naturwissenschaft.'
-  },
-  {
-    year: '2013',
-    title: 'Erste Programmiererfahrungen',
-    description: 'Entwicklung eines eigener Wetterstationsprojekts mit Arduino und Python.'
-  }
-])
-
-const interests = ref([
-  {
-    name: 'Open Source & Wissenschaft',
-    icon: '🌍',
-    description: 'Mitentwicklung an Renew (The Reference Net Workshop, www.renew.de) – Open-Source-Framework für Petri-Netze, Forschung und Lehre.'
-  },
-  {
-    name: 'KI & Computer Vision',
-    icon: '🤖',
-    description: 'Forschungsprojekt AutoWindLoc: Präzise Lokalisierung von Windkraftanlagen in Orthophotos mittels Machine Learning.'
-  },
-  {
-    name: 'Mobile Entwicklung',
-    icon: '📱',
-    description: 'Flutter-App für Nextcloud Talk – moderne, sichere Kommunikation und Integration.'
-  },
-  {
-    name: 'Green Tech & Nachhaltigkeit',
-    icon: '🌱',
-    description: 'Projekte zu Umweltmonitoring, nachhaltigen Technologien und KI-gestützter Analyse.'
-  },
-  {
-    name: 'DevOps & Skalierbarkeit',
-    icon: '⚙️',
-    description: 'Skalierbarkeit und Performance von verteilten P/T-Netzen im Renew-Framework.'
-  }
-])
+const timeline = ref(timelineData)
+const interests = ref(interestsData)
 
 const philosophy = ref(
   'Ich glaube an die Kraft von Open Source, interdisziplinärer Forschung und nachhaltiger Technologie. Meine Projekte verbinden Wissenschaft, Softwareentwicklung und gesellschaftlichen Mehrwert – immer mit dem Ziel, Lösungen zu schaffen, die wirklich etwas bewegen.'
