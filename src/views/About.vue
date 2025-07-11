@@ -6,7 +6,7 @@
           <h1 class="about-title">
             <span class="code-comment">// About me</span>
             <br>
-            Hallo, ich bin <span class="highlight">Justus</span> 👋
+            Hallo, ich bin <span class="highlight">Justus Middendorf</span> 👋
           </h1>
           <p class="about-intro">
             Informatik-Student im {{ currentSemester }}. Semester mit einer Leidenschaft für 
