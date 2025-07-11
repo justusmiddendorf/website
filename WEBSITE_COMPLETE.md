@@ -1,4 +1,4 @@
-# 🎉 Justus Middendorf' Persönliche Website - Fertiggestellt!
+# 🎉 Justus Middendorfs Persönliche Website - Fertiggestellt!
 
 ## 🚀 Features der neuen Website
 
