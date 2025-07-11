@@ -91,7 +91,11 @@
               <div class="skill-item" v-for="skill in category.skills" :key="skill.name">
                 <span class="skill-name">{{ skill.name }}</span>
                 <div class="skill-bar">
-                  <div class="skill-progress" :style="{ width: skill.level + '%' }"></div>
+                  <div 
+                    class="skill-progress" 
+                    :style="{ width: skill.level + '%' }"
+                    :title="`${skill.name}: ${skill.level}%`"
+                  ></div>
                 </div>
                 <span class="skill-level">{{ skill.level }}%</span>
               </div>
@@ -618,6 +622,9 @@ onMounted(() => {
   background: #e9ecef;
   border-radius: 4px;
   overflow: hidden;
+  position: relative;
+  margin: 0 0.5rem;
+  min-width: 60px; /* Ensure minimum width */
 }
 
 .skill-progress {
@@ -625,6 +632,10 @@ onMounted(() => {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border-radius: 4px;
   transition: width 1s ease;
+  position: relative;
+  z-index: 1;
+  display: block; /* Ensure it's displayed */
+  min-width: 2px; /* Ensure visibility even for low percentages */
 }
 
 .skill-level {
@@ -734,6 +745,14 @@ onMounted(() => {
   .skill-name {
     color: #ecf0f1;
   }
+
+  .skill-bar {
+    background: #34495e;
+  }
+
+  .skill-level {
+    color: #5af78e;
+  }
 }
 
 /* Mobile responsive */
@@ -742,14 +761,22 @@ onMounted(() => {
     grid-template-columns: 1fr;
     text-align: center;
     padding: 2rem 0;
+    gap: 2rem;
+  }
+
+  .hero-content,
+  .hero-visual {
+    padding: 0 1rem;
   }
 
   .hero-title {
     font-size: 2.5rem;
+    line-height: 1.2;
   }
 
   .hero-subtitle {
     font-size: 1.1rem;
+    margin-bottom: 1.5rem;
   }
 
   .hero-stats {
@@ -759,34 +786,245 @@ onMounted(() => {
 
   .stat {
     min-width: 100px;
+    padding: 0.75rem;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
   }
 
   .hero-actions {
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .btn {
     width: 100%;
     max-width: 300px;
     justify-content: center;
+    min-height: 48px;
   }
 
   .skills-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .skill-category {
+    padding: 1.5rem;
   }
 
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .project-card {
+    padding: 1.5rem;
   }
 
   .skill-item {
     flex-direction: column;
     align-items: stretch;
     gap: 0.5rem;
+    margin-bottom: 1rem;
   }
 
   .skill-name {
     min-width: auto;
+    margin-bottom: 0.25rem;
+  }
+
+  .skill-bar {
+    width: 100%;
+    height: 10px;
+    margin-bottom: 0.25rem;
+    background: #e9ecef;
+    border-radius: 4px;
+    overflow: hidden;
+    flex: none; /* Remove flex behavior */
+  }
+
+  .skill-progress {
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 4px;
+    transition: width 1s ease;
+    display: block;
+  }
+
+  .skill-level {
+    min-width: auto;
+    text-align: left;
+    font-size: 0.9rem;
+  }
+
+  .terminal-window {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .terminal-header {
+    padding: 0.5rem 1rem;
+  }
+
+  .terminal-title {
+    font-size: 0.8rem;
+  }
+
+  .terminal-body {
+    padding: 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  .code-snippet {
+    max-width: 100%;
+  }
+
+  .code-content {
+    padding: 0.75rem;
+  }
+
+  .code-content pre {
+    font-size: 0.75rem;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .skills {
+    padding: 4rem 0;
+  }
+
+  .projects-preview {
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 1rem 0;
+  }
+
+  .hero-content,
+  .hero-visual {
+    padding: 0 0.5rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .stat {
+    min-width: auto;
+    padding: 0.5rem;
+  }
+
+  .stat-number {
+    font-size: 1.25rem;
+  }
+
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .skills-grid {
+    gap: 1rem;
+  }
+
+  .skill-category {
+    padding: 1rem;
+  }
+
+  .skill-item {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .skill-name {
+    min-width: auto;
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+  }
+
+  .skill-bar {
+    width: 100%;
+    height: 8px;
+    margin-bottom: 0.25rem;
+    background: #e9ecef;
+    border-radius: 4px;
+    overflow: hidden;
+    flex: none; /* Remove flex behavior */
+  }
+
+  .skill-progress {
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 4px;
+    transition: width 1s ease;
+    display: block;
+  }
+
+  .skill-level {
+    min-width: auto;
+    text-align: left;
+    font-size: 0.8rem;
+  }
+
+  .projects-grid {
+    gap: 1rem;
+  }
+
+  .project-card {
+    padding: 1rem;
+  }
+
+  .project-title {
+    font-size: 1.1rem;
+  }
+
+  .tech-tag {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .terminal-body {
+    padding: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .code-content {
+    padding: 0.5rem;
+  }
+
+  .code-content pre {
+    font-size: 0.7rem;
   }
 }
 </style>

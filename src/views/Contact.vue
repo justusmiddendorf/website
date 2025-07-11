@@ -717,16 +717,127 @@ const sendMessage = async () => {
 
 /* Mobile responsive */
 @media (max-width: 768px) {
+  .contact-hero {
+    padding: 4rem 0;
+  }
+
   .contact-title {
     font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .code-comment {
+    font-size: 1.2rem;
+  }
+
+  .contact-intro {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .contact-methods {
+    padding: 4rem 0;
   }
 
   .methods-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .method-card {
+    padding: 1.5rem;
+  }
+
+  .method-icon {
+    font-size: 2.5rem;
+  }
+
+  .method-title {
+    font-size: 1.2rem;
+  }
+
+  .method-description {
+    font-size: 0.9rem;
+  }
+
+  .contact-form-section {
+    padding: 4rem 0;
   }
 
   .form-container {
     padding: 0 1rem;
+  }
+
+  .form-title {
+    font-size: 2rem;
+  }
+
+  .form-subtitle {
+    font-size: 1rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-label {
+    font-size: 0.9rem;
+  }
+
+  .form-input,
+  .form-select,
+  .form-textarea {
+    font-size: 16px; /* Prevent zoom on iOS */
+    padding: 0.875rem;
+    min-height: 48px;
+  }
+
+  .form-textarea {
+    min-height: 120px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .cancel-btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .availability-section {
+    padding: 4rem 0;
+  }
+
+  .availability-title {
+    font-size: 2rem;
+  }
+
+  .availability-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .availability-card {
+    padding: 1.5rem;
+  }
+
+  .availability-status {
+    font-size: 1.2rem;
+  }
+
+  .availability-description {
+    font-size: 0.9rem;
   }
 
   .message-overlay {
@@ -736,6 +847,162 @@ const sendMessage = async () => {
   .message-box {
     flex-direction: column;
     text-align: center;
+    padding: 1.5rem;
+  }
+
+  .message-title {
+    font-size: 1.2rem;
+  }
+
+  .message-text {
+    font-size: 0.9rem;
+  }
+
+  .message-actions {
+    margin-top: 1rem;
+  }
+
+  .message-btn {
+    width: 100%;
+    padding: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-hero {
+    padding: 3rem 0;
+  }
+
+  .contact-title {
+    font-size: 1.75rem;
+  }
+
+  .contact-intro {
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+  }
+
+  .contact-methods {
+    padding: 3rem 0;
+  }
+
+  .methods-grid {
+    padding: 0 0.5rem;
+  }
+
+  .method-card {
+    padding: 1rem;
+  }
+
+  .method-icon {
+    font-size: 2rem;
+  }
+
+  .method-title {
+    font-size: 1.1rem;
+  }
+
+  .method-description {
+    font-size: 0.85rem;
+  }
+
+  .contact-form-section {
+    padding: 3rem 0;
+  }
+
+  .form-container {
+    padding: 0 0.5rem;
+  }
+
+  .form-title {
+    font-size: 1.75rem;
+  }
+
+  .form-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .form-input,
+  .form-select,
+  .form-textarea {
+    padding: 0.75rem;
+  }
+
+  .form-textarea {
+    min-height: 100px;
+  }
+
+  .submit-btn,
+  .cancel-btn {
+    padding: 0.875rem;
+    font-size: 0.9rem;
+  }
+
+  .availability-section {
+    padding: 3rem 0;
+  }
+
+  .availability-title {
+    font-size: 1.75rem;
+  }
+
+  .availability-grid {
+    padding: 0 0.5rem;
+  }
+
+  .availability-card {
+    padding: 1rem;
+  }
+
+  .availability-status {
+    font-size: 1.1rem;
+  }
+
+  .availability-description {
+    font-size: 0.85rem;
+  }
+
+  .message-box {
+    padding: 1rem;
+  }
+
+  .message-title {
+    font-size: 1.1rem;
+  }
+
+  .message-text {
+    font-size: 0.85rem;
+  }
+}
+
+/* Landscape orientation on mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .contact-hero {
+    padding: 2rem 0;
+  }
+
+  .contact-methods {
+    padding: 2rem 0;
+  }
+
+  .contact-form-section {
+    padding: 2rem 0;
+  }
+
+  .availability-section {
+    padding: 2rem 0;
+  }
+
+  .contact-title {
+    font-size: 1.75rem;
+  }
+
+  .form-title {
+    font-size: 1.75rem;
+  }
+
+  .availability-title {
+    font-size: 1.75rem;
   }
 }
 </style>
