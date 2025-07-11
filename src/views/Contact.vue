@@ -182,33 +182,25 @@ const contactMethods = ref([
     icon: '📧',
     title: 'Email',
     description: 'Für ausführliche Projektanfragen und Zusammenarbeit',
-    link: 'mailto:justus@example.com',
-    linkText: 'justus@example.com'
+    link: 'mailto:moin@middendorf.tech',
+    linkText: 'moin@middendorf.tech'
   },
   {
     id: 2,
     icon: '💼',
     title: 'LinkedIn',
     description: 'Berufliches Netzwerk und Karriere-Gespräche',
-    link: 'https://linkedin.com/in/justus',
-    linkText: 'linkedin.com/in/justus'
+    link: 'https://de.linkedin.com/in/jmiddendorf',
+    linkText: 'linkedin.com/in/jmiddendorf'
   },
   {
     id: 3,
     icon: '🐙',
     title: 'GitHub',
     description: 'Code-Kollaboration und Open Source Projekte',
-    link: 'https://github.com/justus',
-    linkText: 'github.com/justus'
+    link: 'https://github.com/justusmiddendorf', 
+    linkText: 'github.com/justusmiddendorf'
   },
-  {
-    id: 4,
-    icon: '💬',
-    title: 'Discord',
-    description: 'Schnelle Fragen und Community-Austausch',
-    link: 'https://discord.com/users/justus',
-    linkText: 'justus#1234'
-  }
 ])
 
 const availabilityStatus = computed(() => {

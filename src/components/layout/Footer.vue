@@ -5,11 +5,11 @@
         <div class="footer-section">
           <h3 class="footer-title">
             <span class="code-bracket">&lt;</span>
-            justus
+            justus middendorf
             <span class="code-bracket">/&gt;</span>
           </h3>
           <p class="footer-description">
-            Open Source, KI, Green Tech, nachhaltige Software & Community – das sind meine Interessen.
+            Informatik-Student mit Leidenschaft für Open Source, KI-Innovation und nachhaltige Technologielösungen
           </p>
           <div class="social-links">
             <a href="#" class="social-link">💼 LinkedIn</a>
@@ -45,7 +45,7 @@
       </div>
       
       <div class="footer-bottom">
-        <p>© 2025 Justus – Open Source, Forschung & nachhaltige Software. Projekte: AutoWindLoc, Nextcloud Talk App, Renew (www.renew.de)</p>
+        <p>© {{ currentYear }} Justus Middendorf - Informatik-Student • Made with ❤️ on Wangerooge </p>
       </div>
     </div>
   </footer>

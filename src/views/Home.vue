@@ -25,7 +25,7 @@
         </div>
         
         <h1 class="hero-title">
-          Hey, ich bin <span class="highlight">Justus</span>
+          Moin, ich bin <span class="highlight">Justus</span>
         </h1>
         <p class="hero-subtitle">
           Informatik-Student mit Leidenschaft für 
@@ -215,7 +215,7 @@ const codeSnippet = ref(`interface FullStackDeveloper {
 }
 
 const justus: FullStackDeveloper = {
-  name: "Justus",
+  name: "Justus Middendorf",
   status: "coding",
   technologies: ["Django", "Vue.js", "Flutter", "Docker"],
   teaLevel: 9000,
@@ -259,7 +259,7 @@ const animateStats = () => {
 
   // Animate project count
   const projectInterval = setInterval(() => {
-    if (projectCount.value < 12) {
+    if (projectCount.value < 6) {
       projectCount.value++
     } else {
       clearInterval(projectInterval)

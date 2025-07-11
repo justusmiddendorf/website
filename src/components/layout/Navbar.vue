@@ -6,7 +6,7 @@
         <router-link to="/" class="brand-link">
           <span class="brand-text">
             <span class="code-bracket">&lt;</span>
-            justus
+            justus middendorf
             <span class="code-bracket">/&gt;</span>
           </span>
         </router-link>

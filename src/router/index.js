@@ -11,7 +11,7 @@ const routes = [
     name: "Home",
     component: Home,
     meta: {
-      title: "Home - Justus | Informatik-Student & Developer",
+      title: "Home - Justus Middendorf | Informatik-Student & Developer",
     },
   },
   {
@@ -19,7 +19,7 @@ const routes = [
     name: "About",
     component: About,
     meta: {
-      title: "About - Justus | Informatik-Student & Developer",
+      title: "About - Justus Middendorf | Informatik-Student & Developer",
     },
   },
   {
@@ -27,7 +27,7 @@ const routes = [
     name: "Projects",
     component: Projects,
     meta: {
-      title: "Projekte - Justus | Informatik-Student & Developer",
+      title: "Projekte - Justus Middendorf | Informatik-Student & Developer",
     },
   },
   {
@@ -35,7 +35,7 @@ const routes = [
     name: "Skills",
     component: Skills,
     meta: {
-      title: "Skills - Justus | Informatik-Student & Developer",
+      title: "Skills - Justus Middendorf | Informatik-Student & Developer",
     },
   },
   {
@@ -43,7 +43,7 @@ const routes = [
     name: "Contact",
     component: Contact,
     meta: {
-      title: "Kontakt - Justus | Informatik-Student & Developer",
+      title: "Kontakt - Justus Middendorf | Informatik-Student & Developer",
     },
   },
 ];
@@ -62,7 +62,8 @@ const router = createRouter({
 
 // Set page title
 router.beforeEach((to, from, next) => {
-  document.title = to.meta.title || "Justus | Informatik-Student & Developer";
+  document.title =
+    to.meta.title || "Justus Middendorf | Informatik-Student & Developer";
   next();
 });
 
