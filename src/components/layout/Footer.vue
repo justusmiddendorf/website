@@ -45,7 +45,7 @@
       </div>
       
       <div class="footer-bottom">
-        <p>{{ currentYear }} Justus Middendorf - Informatik-Student • Made with ❤️ on Wangerooge </p>
+        <p>© {{ currentYear }} Justus Middendorf - Informatik-Student • Made with ❤️ on Wangerooge </p>
       </div>
     </div>
   </footer>
