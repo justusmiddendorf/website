@@ -172,9 +172,111 @@ const currentYear = computed(() => new Date().getFullYear())
 }
 
 @media (max-width: 768px) {
+  .footer-container {
+    padding: 2rem 1rem 1rem;
+  }
+
   .footer-content {
     grid-template-columns: 1fr;
     text-align: center;
+    gap: 1.5rem;
+  }
+
+  .footer-title {
+    font-size: 1.3rem;
+  }
+
+  .footer-subtitle {
+    font-size: 1rem;
+  }
+
+  .footer-description {
+    font-size: 0.9rem;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .social-link {
+    font-size: 0.85rem;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer-link {
+    font-size: 0.9rem;
+  }
+
+  .tech-stack {
+    justify-content: center;
+  }
+
+  .tech-item {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .footer-bottom {
+    padding-top: 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 1.5rem 0.5rem 1rem;
+  }
+
+  .footer-content {
+    gap: 1rem;
+  }
+
+  .footer-title {
+    font-size: 1.2rem;
+  }
+
+  .footer-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .footer-description {
+    font-size: 0.85rem;
+  }
+
+  .social-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .social-link {
+    font-size: 0.8rem;
+  }
+
+  .footer-links {
+    gap: 0.25rem;
+  }
+
+  .footer-link {
+    font-size: 0.85rem;
+  }
+
+  .tech-stack {
+    gap: 0.25rem;
+  }
+
+  .tech-item {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.4rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+    padding: 0.75rem 0.5rem 0;
   }
 }
 </style>

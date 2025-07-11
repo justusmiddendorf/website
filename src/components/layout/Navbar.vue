@@ -286,13 +286,20 @@ onUnmounted(() => {
 
 /* Mobile responsive */
 @media (max-width: 768px) {
+  .navbar-container {
+    padding: 0 var(--spacing-sm);
+    height: 60px;
+  }
+
   .mobile-menu-btn {
     display: flex;
+    position: relative;
+    z-index: 1001;
   }
 
   .navbar-menu {
     position: fixed;
-    top: 70px;
+    top: 60px;
     left: 0;
     right: 0;
     background: rgba(255, 255, 255, 0.98);
@@ -305,6 +312,9 @@ onUnmounted(() => {
     visibility: hidden;
     transition: all 0.3s ease;
     gap: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
   }
 
   .navbar-menu.active {
@@ -315,25 +325,114 @@ onUnmounted(() => {
 
   .navbar-nav {
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.5rem;
     text-align: center;
+    width: 100%;
   }
 
   .nav-link {
-    padding: 1rem 0;
+    padding: 1rem 2rem;
     font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 48px;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+
+  .nav-link:hover {
+    background: rgba(102, 126, 234, 0.1);
+  }
+
+  .nav-icon {
+    font-size: 1.2rem;
   }
 
   .navbar-cta {
     margin-left: 0;
     margin-top: 1rem;
+    padding: 0 2rem;
+  }
+
+  .cta-btn {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    min-height: 48px;
+  }
+
+  .brand-text {
+    font-size: 1.3rem;
   }
 
   @media (prefers-color-scheme: dark) {
     .navbar-menu {
       background: rgba(26, 26, 26, 0.98);
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     }
+
+    .nav-link:hover {
+      background: rgba(102, 126, 234, 0.2);
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-container {
+    padding: 0 var(--spacing-xs);
+    height: 56px;
+  }
+
+  .navbar-menu {
+    top: 56px;
+    padding: 1.5rem 0;
+  }
+
+  .nav-link {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .navbar-cta {
+    padding: 0 1.5rem;
+  }
+
+  .cta-btn {
+    padding: 0.875rem 1.25rem;
+    font-size: 0.9rem;
+  }
+
+  .brand-text {
+    font-size: 1.2rem;
+  }
+
+  .mobile-menu-btn {
+    width: 28px;
+    height: 18px;
+  }
+
+  .hamburger-line {
+    height: 2px;
+  }
+}
+
+/* Landscape orientation on mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .navbar-menu {
+    max-height: calc(100vh - 60px);
+    padding: 1rem 0;
+  }
+
+  .nav-link {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+  }
+
+  .navbar-cta {
+    margin-top: 0.5rem;
   }
 }
 </style>
