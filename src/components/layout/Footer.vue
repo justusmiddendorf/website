@@ -5,7 +5,7 @@
         <div class="footer-section">
           <h3 class="footer-title">
             <span class="code-bracket">&lt;</span>
-            justus
+            justus middendorf
             <span class="code-bracket">/&gt;</span>
           </h3>
           <p class="footer-description">

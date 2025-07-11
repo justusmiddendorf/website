@@ -25,7 +25,7 @@
         </div>
         
         <h1 class="hero-title">
-          Hey, ich bin <span class="highlight">Justus Middendorf</span>
+          Moin, ich bin <span class="highlight">Justus</span>
         </h1>
         <p class="hero-subtitle">
           Informatik-Student mit Leidenschaft für 
