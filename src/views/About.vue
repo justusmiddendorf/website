@@ -416,12 +416,35 @@ const projectHighlights = ref([
 
 /* Mobile responsive */
 @media (max-width: 768px) {
+  .about-hero {
+    padding: 4rem 0;
+  }
+
   .about-title {
     font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .code-comment {
+    font-size: 1.2rem;
   }
 
   .about-intro {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .journey {
+    padding: 4rem 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .timeline {
+    padding: 0 1rem;
   }
 
   .timeline::before {
@@ -431,6 +454,7 @@ const projectHighlights = ref([
   .timeline-item {
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 2rem;
   }
 
   .timeline-item:nth-child(odd),
@@ -443,19 +467,204 @@ const projectHighlights = ref([
     text-align: left;
     margin-left: 3rem;
     margin-right: 0;
+    max-width: none;
   }
 
   .timeline-marker {
     left: 20px;
   }
 
+  .timeline-content {
+    padding: 1.5rem;
+  }
+
+  .timeline-title {
+    font-size: 1.2rem;
+  }
+
+  .timeline-description {
+    font-size: 0.9rem;
+  }
+
+  .interests {
+    padding: 4rem 0;
+  }
+
   .interests-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .interest-card {
+    padding: 1.5rem;
+  }
+
+  .interest-icon {
+    font-size: 2.5rem;
+  }
+
+  .interest-title {
+    font-size: 1.2rem;
+  }
+
+  .interest-description {
+    font-size: 0.9rem;
+  }
+
+  .philosophy {
+    padding: 4rem 0;
+  }
+
+  .philosophy-content {
+    padding: 0 1rem;
+  }
+
+  .philosophy-title {
+    font-size: 2rem;
+  }
+
+  .philosophy-quote {
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
   }
 
   .philosophy-quote::before,
   .philosophy-quote::after {
     display: none;
+  }
+
+  .philosophy-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 3rem 0;
+  }
+
+  .about-title {
+    font-size: 1.75rem;
+  }
+
+  .about-intro {
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+  }
+
+  .journey {
+    padding: 3rem 0;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .timeline {
+    padding: 0 0.5rem;
+  }
+
+  .timeline::before {
+    left: 15px;
+  }
+
+  .timeline-marker {
+    left: 15px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    margin-left: 2.5rem;
+  }
+
+  .timeline-content {
+    padding: 1rem;
+  }
+
+  .timeline-title {
+    font-size: 1.1rem;
+  }
+
+  .timeline-description {
+    font-size: 0.85rem;
+  }
+
+  .interests {
+    padding: 3rem 0;
+  }
+
+  .interests-grid {
+    padding: 0 0.5rem;
+  }
+
+  .interest-card {
+    padding: 1rem;
+  }
+
+  .interest-icon {
+    font-size: 2rem;
+  }
+
+  .interest-title {
+    font-size: 1.1rem;
+  }
+
+  .interest-description {
+    font-size: 0.85rem;
+  }
+
+  .philosophy {
+    padding: 3rem 0;
+  }
+
+  .philosophy-content {
+    padding: 0 0.5rem;
+  }
+
+  .philosophy-title {
+    font-size: 1.75rem;
+  }
+
+  .philosophy-quote {
+    font-size: 1.1rem;
+  }
+
+  .philosophy-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* Landscape orientation on mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .about-hero {
+    padding: 2rem 0;
+  }
+
+  .journey {
+    padding: 2rem 0;
+  }
+
+  .interests {
+    padding: 2rem 0;
+  }
+
+  .philosophy {
+    padding: 2rem 0;
+  }
+
+  .about-title {
+    font-size: 1.75rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .philosophy-title {
+    font-size: 1.75rem;
   }
 }
 </style>

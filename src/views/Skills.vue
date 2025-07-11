@@ -279,16 +279,155 @@ const getSkillLevelClass = (level) => {
 
 /* Mobile responsive */
 @media (max-width: 768px) {
+  .skills-hero {
+    padding: 4rem 0;
+  }
+
   .skills-title {
     font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .code-comment {
+    font-size: 1.2rem;
+  }
+
+  .skills-intro {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .skills-matrix {
+    padding: 4rem 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
   }
 
   .skills-categories {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
   }
 
   .skill-category {
     padding: 1.5rem;
+  }
+
+  .category-title {
+    font-size: 1.3rem;
+  }
+
+  .skill-item {
+    padding: 1rem;
+  }
+
+  .skill-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .skill-name {
+    font-size: 1rem;
+  }
+
+  .skill-level {
+    font-size: 0.9rem;
+  }
+
+  .skill-description {
+    font-size: 0.85rem;
+  }
+
+  .experience-badge {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .section-closing {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-hero {
+    padding: 3rem 0;
+  }
+
+  .skills-title {
+    font-size: 1.75rem;
+  }
+
+  .skills-intro {
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+  }
+
+  .skills-matrix {
+    padding: 3rem 0;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .skills-categories {
+    padding: 0 0.5rem;
+  }
+
+  .skill-category {
+    padding: 1rem;
+  }
+
+  .category-title {
+    font-size: 1.2rem;
+  }
+
+  .skill-item {
+    padding: 0.75rem;
+  }
+
+  .skill-name {
+    font-size: 0.9rem;
+  }
+
+  .skill-level {
+    font-size: 0.8rem;
+  }
+
+  .skill-description {
+    font-size: 0.8rem;
+  }
+
+  .experience-badge {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.4rem;
+  }
+
+  .section-closing {
+    font-size: 1.5rem;
+  }
+}
+
+/* Landscape orientation on mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .skills-hero {
+    padding: 2rem 0;
+  }
+
+  .skills-matrix {
+    padding: 2rem 0;
+  }
+
+  .skills-title {
+    font-size: 1.75rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
   }
 }
 </style>

@@ -1,6 +1,7 @@
 /* Import CSS Variables and Utilities */
 @import './variables.css';
 @import './utilities.css';
+@import './mobile.css';
 
 /* Reset and Base Styles */
 * {
@@ -22,16 +23,24 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  /* Better text rendering on mobile */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
   min-height: 100vh;
   overflow-x: hidden;
+  /* Prevent horizontal scrolling on mobile */
+  max-width: 100%;
 }
 
 #app {
   min-height: 100vh;
+  /* Ensure full viewport height on mobile */
+  min-height: 100svh;
 }
 
 /* Dark mode */
@@ -53,10 +62,65 @@ html {
   outline-offset: 2px;
 }
 
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  /* Larger touch targets for mobile */
+  button, a, input, textarea, select {
+    min-height: 44px;
+  }
+  
+  /* Better tap targets */
+  .nav-link, .btn, .card {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Prevent zoom on input focus (iOS) */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+select,
+textarea {
+  font-size: 16px;
+}
+
+/* Better mobile typography */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 13px;
+  }
+}
+
 /* Selection styles */
 ::selection {
   background: var(--primary-color);
   color: white;
+}
+
+/* Improve mobile scrolling */
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Safe area for notched devices */
+@supports (padding: env(safe-area-inset-top)) {
+  .safe-area-top {
+    padding-top: env(safe-area-inset-top);
+  }
+  
+  .safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
 }
 
 /* Remove utility classes as they are now in utilities.css */

@@ -314,16 +314,168 @@ const openProject = (project) => {
 
 /* Mobile responsive */
 @media (max-width: 768px) {
+  .projects-hero {
+    padding: 4rem 0;
+  }
+
   .projects-title {
     font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .code-comment {
+    font-size: 1.2rem;
+  }
+
+  .projects-intro {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .projects-filter {
+    padding: 1.5rem 0;
+  }
+
+  .filter-tabs {
+    gap: 0.5rem;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding: 0 1rem;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .filter-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    min-width: fit-content;
+  }
+
+  .projects-grid-section {
+    padding: 3rem 0;
   }
 
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
   }
 
   .project-card {
-    margin: 0 1rem;
+    margin: 0;
+  }
+
+  .project-content {
+    padding: 1.5rem;
+  }
+
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+  }
+
+  .project-status {
+    font-size: 0.7rem;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .feature-item {
+    font-size: 0.85rem;
+  }
+
+  .project-tech {
+    gap: 0.25rem;
+  }
+
+  .tech-tag {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-hero {
+    padding: 3rem 0;
+  }
+
+  .projects-title {
+    font-size: 1.75rem;
+  }
+
+  .projects-intro {
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+  }
+
+  .filter-tabs {
+    padding: 0 0.5rem;
+  }
+
+  .filter-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .projects-grid {
+    padding: 0 0.5rem;
+    gap: 1rem;
+  }
+
+  .project-content {
+    padding: 1rem;
+  }
+
+  .project-title {
+    font-size: 1.1rem;
+  }
+
+  .project-description {
+    font-size: 0.85rem;
+  }
+
+  .feature-item {
+    font-size: 0.8rem;
+  }
+
+  .project-image {
+    height: 150px;
+  }
+}
+
+/* Landscape orientation on mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .projects-hero {
+    padding: 2rem 0;
+  }
+
+  .projects-title {
+    font-size: 1.75rem;
+  }
+
+  .projects-intro {
+    font-size: 0.95rem;
+  }
+
+  .projects-filter {
+    padding: 1rem 0;
+  }
+
+  .projects-grid-section {
+    padding: 2rem 0;
   }
 }
 </style>
